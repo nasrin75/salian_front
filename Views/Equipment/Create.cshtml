@@ -1,0 +1,53 @@
+﻿<div class="wrapper">
+
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-12 col-xl-10">
+                <div class="row align-items-center my-4">
+                    <div class="col">
+                        <h2 class="h3 mb-0 page-title">افزودن قطعه</h2>
+                        <hr class="my-4">
+
+                    </div>
+
+                </div>
+                <form asp-action="Create" method="post">
+                    @if (!string.IsNullOrWhiteSpace(ViewBag.message))
+                    {
+                        <div class="col-12 mb-4">
+                            <div class="alert alert-@ViewBag.alertColor alert-dismissible fade show" role="alert">
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                @ViewBag.message
+                            </div>
+                        </div>
+                    }
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="Name">نام قطعه</label>
+                            <input type="text" class="form-control" for="Name">
+                        </div>
+                    </div>
+
+
+                    <div class="form-row">
+                        <label for="IsActive" class="mr-4">نوع قطعه : </label>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="active" name="type" value="0" class="custom-control-input" checked>
+                            <label class="custom-control-label" for="active">داخلی</label>
+                        </div>
+                        <div class="custom-control custom-radio ">
+                            <input type="radio" id="deActive" name="type" value="1" class="custom-control-input">
+                            <label class="custom-control-label" for="deActive">خارجی</label>
+                        </div>
+                    </div>
+                    <div class="form-row col-auto mt-4">
+                        <button class="btn btn-primary">ذخیره</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

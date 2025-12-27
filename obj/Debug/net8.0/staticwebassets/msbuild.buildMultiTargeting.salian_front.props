@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\salian_front.props" />
+</Project>

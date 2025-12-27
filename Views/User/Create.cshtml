@@ -1,0 +1,79 @@
+﻿<div class="wrapper">
+
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-12 col-xl-10">
+                <div class="row align-items-center my-4">
+                    <div class="col">
+                        <h2 class="h3 mb-0 page-title">افزودن کاربر</h2>
+                        <hr class="my-4">
+
+                    </div>
+
+                </div>
+                <form asp-action="Create">
+                    @if (!string.IsNullOrWhiteSpace(ViewBag.message))
+                    {
+                        <div class="col-12 mb-4">
+                            <div class="alert alert-@ViewBag.alertColor alert-dismissible fade show" role="alert">
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                @ViewBag.message
+                            </div>
+                        </div>
+                    }
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="Username">نام کاربری</label>
+                            <input type="text" class="form-control" for="Username">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="Email">ایمیل</label>
+                            <input type="text" class="form-control" for="Email">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label sp-for="Password">رمزعبور</label>
+                            <input type="text" class="form-control" for="Password">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="Mobile">موبایل</label>
+                            <input type="text" class="form-control" for="Mobile">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <label for="role" class="mr-4">نقش : </label>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="adminRole" name="isAdmin" value="true" class="custom-control-input">
+                            <label class="custom-control-label" for="adminRole">ادمین</label>
+                        </div>
+                        <div class="custom-control custom-radio ">
+                            <input type="radio" id="userRole" name="isAdmin" value="false" class="custom-control-input" checked>
+                            <label class="custom-control-label" for="userRole">کاربر</label>
+                        </div>
+                    </div>
+
+
+                    <div class="form-row">
+                        <label for="activeStatus" class="mr-4">وضعیت : </label>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="activeStatus" name="Status" value="1" class="custom-control-input" checked>
+                            <label class="custom-control-label" for="activeStatus">فعال</label>
+                        </div>
+                        <div class="custom-control custom-radio ">
+                            <input type="radio" id="deActiveStatus" name="Status" value="0" class="custom-control-input">
+                            <label class="custom-control-label" for="deActiveStatus">غیرفعال</label>
+                        </div>
+                    </div>
+
+
+                    <div class="form-row col-auto mt-4">
+                        <button type="submit" class="btn btn-primary">ذخیره</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

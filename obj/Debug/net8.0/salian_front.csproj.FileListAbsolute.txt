@@ -28,3 +28,4 @@ F:\Projects\salian_front\obj\Debug\net8.0\refint\salian_front.dll
 F:\Projects\salian_front\obj\Debug\net8.0\salian_front.pdb
 F:\Projects\salian_front\obj\Debug\net8.0\salian_front.genruntimeconfig.cache
 F:\Projects\salian_front\obj\Debug\net8.0\ref\salian_front.dll
+F:\Projects\salian_front\obj\Debug\net8.0\salian_front.sourcelink.json

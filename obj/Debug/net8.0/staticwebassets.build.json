@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "TwWtl8Yb/L9bcyEPXqVKoFFaM+wpE/iqgMbmjGKRO2o=",
+  "Hash": "KVC9uirQrrL7OCeqrs4pUFSlb8c+6ZK9PiGweRwqAfc=",
   "Source": "salian_front",
   "BasePath": "_content/salian_front",
   "Mode": "Default",
@@ -851,6 +851,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\fonts\\feather.woff"
+    },
+    {
+      "Identity": "F:\\Projects\\salian_front\\wwwroot\\fonts\\IRANSansWebFaNum_Light.ttf",
+      "SourceId": "salian_front",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\Projects\\salian_front\\wwwroot\\",
+      "BasePath": "_content/salian_front",
+      "RelativePath": "fonts/IRANSansWebFaNum_Light.ttf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\fonts\\IRANSansWebFaNum_Light.ttf"
     },
     {
       "Identity": "F:\\Projects\\salian_front\\wwwroot\\fonts\\Unique Light_MRT.ttf",

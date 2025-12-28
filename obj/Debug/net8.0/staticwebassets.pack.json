@@ -157,6 +157,10 @@
       "PackagePath": "staticwebassets\\fonts\\BZiba.ttf"
     },
     {
+      "Id": "F:\\Projects\\salian_front\\wwwroot\\fonts\\IRANSansWebFaNum_Light.ttf",
+      "PackagePath": "staticwebassets\\fonts\\IRANSansWebFaNum_Light.ttf"
+    },
+    {
       "Id": "F:\\Projects\\salian_front\\wwwroot\\fonts\\Unique Light_MRT.ttf",
       "PackagePath": "staticwebassets\\fonts\\Unique Light_MRT.ttf"
     },

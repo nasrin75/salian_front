@@ -26,21 +26,51 @@
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="Username">نام کاربری</label>
-                            <input type="text" class="form-control" for="Username">
+                            <input type="text" class="form-control" name="username" for="Username">
                         </div>
                         <div class="form-group col-md-6">
                             <label for="Email">ایمیل</label>
-                            <input type="text" class="form-control" for="Email">
+                            <input type="text" class="form-control" name="email" for="Email">
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label sp-for="Password">رمزعبور</label>
-                            <input type="text" class="form-control" for="Password">
+                            <input type="text" class="form-control" name="password" for="Password">
                         </div>
                         <div class="form-group col-md-6">
                             <label for="Mobile">موبایل</label>
-                            <input type="text" class="form-control" for="Mobile">
+                            <input type="text" class="form-control" name="mobile" for="Mobile">
+                        </div>
+                    </div>
+
+                    
+                    <div class="form-row" id="IpWhiteList">
+                        <div class="form-group col-md-6">
+                            <label sp-for="Password">IP WhiteList</label>
+                            <input class="form-control input-ip" id="custom-ipadd" name="IpWhiteLists[]">
+                           
+                        </div>
+ @*                        <div class="form-group col-md-6 mt-5">
+                            <button class="btn btn-success btn-sm" onclick="addIp">+</button>
+                            <button class="btn btn-danger btn-sm" onclick="removeIp(this)">-</button>
+                        </div> *@
+                    </div>
+                    <div class="form-row" id="IpWhiteList">
+                        <div class="form-group col-md-6">
+                            <input class="form-control input-ip" id="custom-ipadd" name="IpWhiteLists[]">
+                        </div>
+                    
+                    </div>
+                    <div class="form-row" id="IpWhiteList">
+                        <div class="form-group col-md-6">
+                            <input class="form-control input-ip" id="custom-ipadd" name="IpWhiteLists[]">
+                        </div>
+                    </div>
+                    <div class="form-row my-4 mx-3">
+                        <div class="form-check form-check-inline ml-1">
+                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                            <label class="form-check-label" for="inlineCheckbox1">IP چک شود ؟ </label>
                         </div>
                     </div>
                     <div class="form-row">
@@ -68,7 +98,17 @@
                         </div>
                     </div>
 
-
+                    <div class="form-row">
+                        <label for="passwordCode" class="mr-4">ورود با  : </label>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="passwordCode" name="loginType" value="1" class="custom-control-input" checked>
+                            <label class="custom-control-label" for="passwordCode">رمزعبور</label>
+                        </div>
+                        <div class="custom-control custom-radio ">
+                            <input type="radio" id="otpCode" name="loginType" value="2" class="custom-control-input">
+                            <label class="custom-control-label" for="otpCode">کد Otp</label>
+                        </div>
+                    </div>
                     <div class="form-row col-auto mt-4">
                         <button type="submit" class="btn btn-primary">ذخیره</button>
                     </div>

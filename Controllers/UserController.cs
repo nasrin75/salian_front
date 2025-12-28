@@ -15,6 +15,5 @@ namespace salian_front.Controllers
             return View();
         }
 
-    
     }
 }

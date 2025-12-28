@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="favicon.ico">
     <title> نرم افزار مدیریت اموال IT </title>
     <!-- Simple bar CSS -->
     <link rel="stylesheet" href="~/css/simplebar.css">
@@ -136,19 +135,21 @@
                 <ul class="navbar-nav flex-fill w-100 mb-2">
 
                     <li class="nav-item dropdown">
+                        
                         <a href="#setting" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle nav-link">
                             <i class="fe fe-settings fe-16"></i>
                             <span class="ml-3 item-text">تنظیمات</span>
                         </a>
+                        <ul class="collapse list-unstyled pl-4 w-100" id="setting">
+                            <a class="nav-link pl-3" href="@Url.Action("List", "Role")"><span class="ml-1">نقش ها</span></a>
+                        </ul>
                         <ul class="collapse list-unstyled pl-4 w-100" id="setting">
                             <a class="nav-link pl-3" href="@Url.Action("List", "Permission")"><span class="ml-1">دسترسی ها</span></a>
                         </ul>
                         <ul class="collapse list-unstyled pl-4 w-100" id="setting">
                             <a class="nav-link pl-3" href="@Url.Action("List", "Location")"><span class="ml-1">موقعیت ها</span></a>
                         </ul>
-                        <ul class="collapse list-unstyled pl-4 w-100" id="setting">
-                            <a class="nav-link pl-3" href="@Url.Action("List", "Role")"><span class="ml-1">نقش ها</span></a>
-                        </ul>
+                        
                     </li>
 
                 </ul>
@@ -156,7 +157,6 @@
         </aside>
         <main role="main" class="main-content">
             @RenderBody()
-
         </main> <!-- main -->
     </div> <!-- .wrapper -->
     <script src="~/js/jquery.min.js"></script>
@@ -398,6 +398,22 @@
         }
         gtag('js', new Date());
         gtag('config', 'UA-56159088-1');
+    </script>
+
+    @* custome script *@ 
+    <script>
+        $(document).on('click', 'open-modal', function () {
+            let url = $(this).data("url");
+            let id = $(this).data("id");
+            let title = $(this).data("title");
+
+            $("#mainModalTitle").text(title);
+            $("#mainModalBody").html("looading ...");
+
+            $("#mainModalBody").load(url + '?id=' + id, function(){
+                $("#mainModal").modal('show');
+            })
+        })
     </script>
 </body>
 </html>

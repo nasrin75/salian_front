@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("salian_front")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+11d6f914262d9524663719d8a0138186ab51bc17")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5a07bba76fe43920ce719456370de261c78e7c97")]
 [assembly: System.Reflection.AssemblyProductAttribute("salian_front")]
 [assembly: System.Reflection.AssemblyTitleAttribute("salian_front")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

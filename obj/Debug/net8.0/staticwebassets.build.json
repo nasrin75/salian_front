@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "KVC9uirQrrL7OCeqrs4pUFSlb8c+6ZK9PiGweRwqAfc=",
+  "Hash": "7x8+1lU4ar7WZAGf9ctJg99Kn6qSgsydmsYdcu4pf7w=",
   "Source": "salian_front",
   "BasePath": "_content/salian_front",
   "Mode": "Default",
@@ -585,6 +585,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\perfect-scrollbar.css"
+    },
+    {
+      "Identity": "F:\\Projects\\salian_front\\wwwroot\\css\\PersianDatePicker.min.css",
+      "SourceId": "salian_front",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\Projects\\salian_front\\wwwroot\\",
+      "BasePath": "_content/salian_front",
+      "RelativePath": "css/PersianDatePicker.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\PersianDatePicker.min.css"
     },
     {
       "Identity": "F:\\Projects\\salian_front\\wwwroot\\css\\quill.snow.css",
@@ -1440,6 +1459,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\perfect-scrollbar.min.js"
+    },
+    {
+      "Identity": "F:\\Projects\\salian_front\\wwwroot\\js\\PersianDatePicker.min.js",
+      "SourceId": "salian_front",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\Projects\\salian_front\\wwwroot\\",
+      "BasePath": "_content/salian_front",
+      "RelativePath": "js/PersianDatePicker.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\PersianDatePicker.min.js"
     },
     {
       "Identity": "F:\\Projects\\salian_front\\wwwroot\\js\\popper.min.js",

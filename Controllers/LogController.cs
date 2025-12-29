@@ -6,6 +6,7 @@ namespace salian_front.Controllers
     {
         public IActionResult List()
         {
+            ViewBag.nowDate = DateTime.Now.ToString("MM/dd/yyyy");
             return View();
         }
     }

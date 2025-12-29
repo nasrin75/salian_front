@@ -16,23 +16,54 @@
                 <strong class="card-title">فیلتر</strong>
             </div>
             <div class="card-body">
-                <form>
+                <form method="post">
                     <div class="form-row">
-                         <div class="form-group col-md-2">
+                        @*  <div class="form-group col-md-2">
                             <input type="text" class="form-control drgpicker" id="date-input1" value="04/24/2020" aria-describedby="button-addon2">
                             <div class="input-group-append">
                                 <div class="input-group-text" id="button-addon-date"><span class="fe fe-calendar fe-16"></span></div>
                             </div>
-                        </div> 
+                        </div>  *@
+                        <div class="form-group col-md-2">
+                            <label for="inputUsername"><strong>نام کاربر</strong></label>
+                            <input type="text" class="form-control" id="inputUsername">
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="date-input1">تاریخ شروع</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control drgpicker" id="date-input1" value="@ViewBag.nowDate" aria-describedby="button-addon2">
+                                <div class="input-group-append">
+                                    <div class="input-group-text" id="button-addon-date"><span class="fe fe-calendar fe-16"></span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="date-input1">تاریخ شروع</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control drgpicker" id="date-input1" value="@ViewBag.nowDate" aria-describedby="button-addon2">
+                                <div class="input-group-append">
+                                    <div class="input-group-text" id="button-addon-date"><span class="fe fe-calendar fe-16"></span></div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="form-group col-md-2">
                             <label for="simple-select2"><strong>نوع عملیات</strong></label>
-                            <select class="form-control select2-multi" id="multi-select2">
+                            <select class="form-control select2-multi" id="multi-select2" name="actionType[]">
                                 @* <option value="" selected>انتخاب کنید</option> *@
                                 <option value="0">ورود</option>
                                 <option value="1">جابجایی</option>
                             </select>
                         </div>
-                        <div class="form-group col-md-8 my-4 py-1">
+                      @*   <div class="form-group col-md-2">
+                            <label for="simple-select2"><strong> تاریخ شروع</strong></label>
+                            <input type="text" name="startDate" class="form-control" onclick="PersianDatePicker.Show(this, '1404-01-01');" />
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="simple-select2"><strong>تاریخ پایان</strong></label>
+                            <input type="text" name="endDate" class="form-control" onclick="PersianDatePicker.Show(this, @ViewBag.nowDate);" />
+                        </div> *@
+                       
+                        <div class="form-group col-md-2 my-4 py-1">
                             <button type="submit" class="btn btn-primary mb-2 my-auto">جستجو</button>
                         </div>
                     </div>
@@ -103,3 +134,6 @@
     </ul>
 </nav>
 <!-- end pagination -->
+@section Scripts {
+    <script type="text/javascript" src="~/js/PersianDatePicker.min.js"></script>
+}

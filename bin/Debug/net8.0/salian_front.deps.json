@@ -7,10 +7,14 @@
   "targets": {
     ".NETCoreApp,Version=v8.0": {
       "salian_front/1.0.0": {
+        "dependencies": {
+          "PersianDatePicker": "1.1.1"
+        },
         "runtime": {
           "salian_front.dll": {}
         }
-      }
+      },
+      "PersianDatePicker/1.1.1": {}
     }
   },
   "libraries": {
@@ -18,6 +22,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "PersianDatePicker/1.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-b8VnToskAPNTdHpV3KrxhciPpe6HH1oc07ZKkO+fA3dHddguiJEYmcOLW3MqX3Y1quw416ItQCEdDT24fIQvvg==",
+      "path": "persiandatepicker/1.1.1",
+      "hashPath": "persiandatepicker.1.1.1.nupkg.sha512"
     }
   }
 }

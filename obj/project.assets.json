@@ -1,11 +1,33 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {}
+    "net8.0": {
+      "PersianDatePicker/1.1.1": {
+        "type": "package"
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "PersianDatePicker/1.1.1": {
+      "sha512": "b8VnToskAPNTdHpV3KrxhciPpe6HH1oc07ZKkO+fA3dHddguiJEYmcOLW3MqX3Y1quw416ItQCEdDT24fIQvvg==",
+      "type": "package",
+      "path": "persiandatepicker/1.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/Content/PersianDatePicker.css",
+        "content/Content/PersianDatePicker.min.css",
+        "content/Scripts/PersianDatePicker.js",
+        "content/Scripts/PersianDatePicker.min.js",
+        "persiandatepicker.1.1.1.nupkg.sha512",
+        "persiandatepicker.nuspec"
+      ]
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0": []
+    "net8.0": [
+      "PersianDatePicker >= 1.1.1"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\hassanpour.n\\.nuget\\packages\\": {},
@@ -56,6 +78,12 @@
     "frameworks": {
       "net8.0": {
         "targetAlias": "net8.0",
+        "dependencies": {
+          "PersianDatePicker": {
+            "target": "Package",
+            "version": "[1.1.1, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

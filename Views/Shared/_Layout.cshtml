@@ -21,6 +21,8 @@
     <!-- App CSS -->
     <link rel="stylesheet" href="~/css/app-light.css" id="lightTheme">
     <link rel="stylesheet" href="~/css/app-dark.css" id="darkTheme" disabled>
+    
+    <link type="text/css" rel="stylesheet" href="~/css/PersianDatePicker.min.css" />
 </head>
 <body class="vertical  light rtl ">
     <div class="wrapper">
@@ -159,10 +161,11 @@
         </aside>
         <main role="main" class="main-content">
             @RenderBody()
+            @RenderSection("Scripts", required: false)
         </main> <!-- main -->
     </div> <!-- .wrapper -->
     <script src="~/js/jquery.min.js"></script>
-    <script src="~/js/jquery.validate.js"></script>
+    @* <script src="~/js/jquery.validate.js"></script> *@
     <script src="~/js/jquery.validate.unobtrusive.min.js"></script>
 
     <script src="~/js/popper.min.js"></script>
@@ -403,7 +406,7 @@
     </script>
 
     @* custome script *@ 
-    <script>
+   @*  <script>
         $(document).on('click', 'open-modal', function () {
             let url = $(this).data("url");
             let id = $(this).data("id");
@@ -416,6 +419,6 @@
                 $("#mainModal").modal('show');
             })
         })
-    </script>
+    </script> *@
 </body>
 </html>

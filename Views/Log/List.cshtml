@@ -1,0 +1,105 @@
+﻿
+<!-- add and btn section -->
+<div class="row col-md-12 my-2">
+    <div class="col ml-auto">
+        <div class="dropdown float-right">
+            <button class="btn btn-secondary float-right ml-3" type="button">Export Excel</button>
+        </div>
+    </div>
+</div>
+<!-- add and btn section -->
+<!-- filter section -->
+<div class="row my-2">
+    <div class="col-md-12">
+        <div class="card shadow mb-4">
+            <div class="card-header">
+                <strong class="card-title">فیلتر</strong>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="form-row">
+                         <div class="form-group col-md-2">
+                            <input type="text" class="form-control drgpicker" id="date-input1" value="04/24/2020" aria-describedby="button-addon2">
+                            <div class="input-group-append">
+                                <div class="input-group-text" id="button-addon-date"><span class="fe fe-calendar fe-16"></span></div>
+                            </div>
+                        </div> 
+                        <div class="form-group col-md-2">
+                            <label for="simple-select2"><strong>نوع عملیات</strong></label>
+                            <select class="form-control select2-multi" id="multi-select2">
+                                @* <option value="" selected>انتخاب کنید</option> *@
+                                <option value="0">ورود</option>
+                                <option value="1">جابجایی</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-8 my-4 py-1">
+                            <button type="submit" class="btn btn-primary mb-2 my-auto">جستجو</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end  filter section -->
+<!-- List section -->
+<div class="col-md-12 my-4">
+    <div class="card shadow">
+        <div class="card-header">
+            <h4 class="card-title">تاریخچه</h4>
+        </div>
+        <div class="card-body">
+            <table class="table table-hover">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>نام کاربر</th>
+                        <th>IP کاربر</th>
+                        <th>نوع عملیات</th>
+                        <th> تاریخ میلادی</th>
+                        <th> تاریخ شمسی</th>
+                        <th>عملیات</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td>حسن پور</td>
+                        <td>192.168.90.79</td>
+                        <td>جابجایی</td>
+                        <td>2025-12-29</td>
+                        <td>1404-10-08</td>
+                        <td>
+                            <span class="circle circle-sm bg-danger"><i class="fe fe-trash-2 fe-16 text-white"></i></span>
+                            <span class="circle circle-sm bg-success"><i class="fe fe-file-text fe-16 text-white"></i></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>حسن پور</td>
+                        <td>192.168.90.77</td>
+                        <td>ورود</td>
+                        <td>2025-12-29</td>
+                        <td>1404-10-08</td>
+                        <td>
+                            <span class="circle circle-sm bg-danger"><i class="fe fe-trash-2 fe-16 text-white"></i></span>
+                            <span class="circle circle-sm bg-success"><i class="fe fe-file-text fe-16 text-white"></i></span>
+                        </td>
+
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<!-- end list section -->
+<!-- agination -->
+<nav aria-label="Table Paging" class="mb-0 text-muted">
+    <ul class="pagination justify-content-center mb-0">
+        <li class="page-item"><a class="page-link" href="#">قبلی</a></li>
+        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">بعدی</a></li>
+    </ul>
+</nav>
+<!-- end pagination -->

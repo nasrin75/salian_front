@@ -2,7 +2,7 @@
 
 namespace salian_front.Controllers
 {
-    public class ActionTypeController : Controller
+    public class LogController : Controller
     {
         public IActionResult List()
         {

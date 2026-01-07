@@ -8,5 +8,10 @@ namespace salian_front.Controllers
         {
             return View();
         }
+
+        public IActionResult Create()
+        {
+            return View();
+        }
     }
 }

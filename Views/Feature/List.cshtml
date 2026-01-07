@@ -3,7 +3,7 @@
     <div class="col ml-auto">
         <div class="dropdown float-right">
             <button class="btn btn-primary float-right ml-3" type="button">
-                <a class="text-white card-link p-1" href="@Url.Action("Create","Role")">افزودن نقش+ </a>
+                <a class="text-white card-link p-1" href="@Url.Action("Create","Feature")">افزودن ویژگی + </a>
             </button>
 
         </div>
@@ -21,8 +21,8 @@
                 <form>
                     <div class="form-row">
                         <div class="form-group col-md-2">
-                            <label for="inputUsername"><strong>نام نقش</strong></label>
-                            <input type="text" class="form-control" id="inputUsername">
+                            <label for="name"><strong>نام قطعه</strong></label>
+                            <input type="text" class="form-control" id="name">
                         </div>
                         <div class="form-group col-md-8 my-4 py-1">
                             <button type="submit" class="btn btn-primary mb-2 my-auto">جستجو</button>
@@ -38,7 +38,7 @@
 <div class="col-md-12 my-4">
     <div class="card shadow">
         <div class="card-header">
-            <h4 class="card-title">نقش ها</h4>
+            <h4 class="card-title">ویژگی قطعات</h4>
         </div>
         <div class="card-body">
             <table class="table table-hover">
@@ -53,10 +53,10 @@
 
                     <tr>
                         <td>
-                            ادمین
+                            حافظه داخلی
                         </td>
                         <td>
-                            Admin
+                            RAM
                         </td>
                         <td>
                             <span class="circle circle-sm bg-danger"><i class="fe fe-trash-2 fe-16 text-white"></i></span>
@@ -66,10 +66,10 @@
                     </tr>
                     <tr>
                         <td>
-                            کاربر
+                            مانیتور
                         </td>
                         <td>
-                            User
+                            Monitor
                         </td>
                         <td>
                             <span class="circle circle-sm bg-danger"><i class="fe fe-trash-2 fe-16 text-white"></i></span>

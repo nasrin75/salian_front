@@ -18,6 +18,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = F:\Projects\salian_front
 build_property._RazorSourceGeneratorDebug = 
 
+[F:/Projects/salian_front/Views/ActionType/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWN0aW9uVHlwZVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Projects/salian_front/Views/ActionType/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWN0aW9uVHlwZVxMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [F:/Projects/salian_front/Views/Employee/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -48,6 +56,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [F:/Projects/salian_front/Views/Location/List.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9jYXRpb25cTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Projects/salian_front/Views/Log/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9nXExpc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [F:/Projects/salian_front/Views/Permission/Create.cshtml]

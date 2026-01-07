@@ -3,9 +3,8 @@
 <div class="row col-md-12">
     <div class="col ml-auto">
         <div class="dropdown float-right">
-            <button class="btn btn-secondary float-right ml-3" type="button">Export Excel</button>
             <button class="btn btn-primary float-right ml-3" type="button">
-                <a class="text-white card-link p-1" href="@Url.Action("Create","Location")"> افزودن موقعیت + </a>
+                <a class="text-white card-link p-1" href="@Url.Action("Create","ActionType")">افزودن عملیات +</a>
             </button>
 
         </div>
@@ -23,12 +22,8 @@
                 <form>
                     <div class="form-row">
                         <div class="form-group col-md-2">
-                            <label for="inputTitle"><strong>عنوان</strong></label>
-                            <input type="text" class="form-control" id="inputTitle">
-                        </div>
-                        <div class="form-group col-md-2">
-                            <label for="inputAbbreviation"><strong>مخفف</strong></label>
-                            <input type="text" class="form-control" id="inputAbbreviation">
+                            <label for="inputUsername"><strong>نام عملیات</strong></label>
+                            <input type="text" class="form-control" id="inputUsername">
                         </div>
                         <div class="form-group col-md-8 my-4 py-1">
                             <button type="submit" class="btn btn-primary mb-2 my-auto">جستجو</button>
@@ -44,50 +39,33 @@
 <div class="col-md-12 my-4">
     <div class="card shadow">
         <div class="card-header">
-            <h4 class="card-title">موقعیت ها</h4>
+            <h4 class="card-title">نوع عملیات </h4>
         </div>
         <div class="card-body">
             <table class="table table-hover">
                 <thead class="thead-dark">
                     <tr>
-                        <th>عنوان</th>
-                        <th>مخفف</th>
-                        <th>نمایش</th>
+                        <th>نام فارسی</th>
+                        <th>نام انگلیسی</th>
+                        <th>تعداد عملیات</th>
                         <th>عملیات</th>
                     </tr>
                 </thead>
                 <tbody>
 
                     <tr>
+                        <td>ارسال جهت شارژ</td>
+                        <td>Send_To_Charge</td>
+                        <td><a href="">60</a></td>
                         <td>
-                            واحد تبلیغات
-                        </td>
-                        <td>ADV</td>
-                        <td>
-                            <div class="custom-control custom-switch">
-                                <input type="checkbox" class="custom-control-input" id="c1" checked>
-                                <label class="custom-control-label" for="c1"></label>
-                            </div>
-                        </td>
-
-                        <td>
-                            <span class="circle circle-sm bg-danger"><i class="fe fe-trash-2 fe-16 text-white"></i></span>
                             <span class="circle circle-sm bg-primary-light"><i class="fe fe-edit fe-16 text-white"></i></span>
                         </td>
                     </tr>
                     <tr>
+                        <td> جابجایی</td>
+                        <td>Replace</td>
+                        <td><a href="">102</a></td>
                         <td>
-                            واحد فناوری اطلاعات
-                        </td>
-                        <td>IT</td>
-                        <td>
-                            <div class="custom-control custom-switch">
-                                <input type="checkbox" class="custom-control-input" id="c1" checked>
-                                <label class="custom-control-label" for="c1"></label>
-                            </div>
-                        </td>
-                        <td>
-                            <span class="circle circle-sm bg-danger"><i class="fe fe-trash-2 fe-16 text-white"></i></span>
                             <span class="circle circle-sm bg-primary-light"><i class="fe fe-edit fe-16 text-white"></i></span>
                         </td>
 

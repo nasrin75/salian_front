@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "TwWtl8Yb/L9bcyEPXqVKoFFaM+wpE/iqgMbmjGKRO2o=",
+  "Hash": "7x8+1lU4ar7WZAGf9ctJg99Kn6qSgsydmsYdcu4pf7w=",
   "Source": "salian_front",
   "BasePath": "_content/salian_front",
   "Mode": "Default",
@@ -587,6 +587,25 @@
       "OriginalItemSpec": "wwwroot\\css\\perfect-scrollbar.css"
     },
     {
+      "Identity": "F:\\Projects\\salian_front\\wwwroot\\css\\PersianDatePicker.min.css",
+      "SourceId": "salian_front",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\Projects\\salian_front\\wwwroot\\",
+      "BasePath": "_content/salian_front",
+      "RelativePath": "css/PersianDatePicker.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\PersianDatePicker.min.css"
+    },
+    {
       "Identity": "F:\\Projects\\salian_front\\wwwroot\\css\\quill.snow.css",
       "SourceId": "salian_front",
       "SourceType": "Discovered",
@@ -851,6 +870,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\fonts\\feather.woff"
+    },
+    {
+      "Identity": "F:\\Projects\\salian_front\\wwwroot\\fonts\\IRANSansWebFaNum_Light.ttf",
+      "SourceId": "salian_front",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\Projects\\salian_front\\wwwroot\\",
+      "BasePath": "_content/salian_front",
+      "RelativePath": "fonts/IRANSansWebFaNum_Light.ttf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\fonts\\IRANSansWebFaNum_Light.ttf"
     },
     {
       "Identity": "F:\\Projects\\salian_front\\wwwroot\\fonts\\Unique Light_MRT.ttf",
@@ -1421,6 +1459,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\perfect-scrollbar.min.js"
+    },
+    {
+      "Identity": "F:\\Projects\\salian_front\\wwwroot\\js\\PersianDatePicker.min.js",
+      "SourceId": "salian_front",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\Projects\\salian_front\\wwwroot\\",
+      "BasePath": "_content/salian_front",
+      "RelativePath": "js/PersianDatePicker.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\PersianDatePicker.min.js"
     },
     {
       "Identity": "F:\\Projects\\salian_front\\wwwroot\\js\\popper.min.js",

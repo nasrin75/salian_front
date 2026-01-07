@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "bX1Cc3oAcXKAtu2Q3PoMD8mFFjoUP7QQ1QqZI7m8gOqHpVc+SqTP+HRngcyjtgl70S6eULJ5lDobZ0ioXhWeGg==",
+  "dgSpecHash": "+LuXPzNQDIRxzttmJWjuIlrFWwGuHqRNMu6cQpJCpJXH4HIS9uZ03IoRGehmBAkbI232FuloXqde+zNxWpF2ZA==",
   "success": true,
   "projectFilePath": "F:\\Projects\\salian_front\\salian_front.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\hassanpour.n\\.nuget\\packages\\persiandatepicker\\1.1.1\\persiandatepicker.1.1.1.nupkg.sha512"
+  ],
   "logs": []
 }

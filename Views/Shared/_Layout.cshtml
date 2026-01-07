@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="favicon.ico">
     <title> نرم افزار مدیریت اموال IT </title>
     <!-- Simple bar CSS -->
     <link rel="stylesheet" href="~/css/simplebar.css">
@@ -22,6 +21,8 @@
     <!-- App CSS -->
     <link rel="stylesheet" href="~/css/app-light.css" id="lightTheme">
     <link rel="stylesheet" href="~/css/app-dark.css" id="darkTheme" disabled>
+    
+    <link type="text/css" rel="stylesheet" href="~/css/PersianDatePicker.min.css" />
 </head>
 <body class="vertical  light rtl ">
     <div class="wrapper">
@@ -91,7 +92,7 @@
                     <li class="nav-item dropdown">
                         <a href="#ui-elements" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle nav-link">
                             <i class="fe fe-edit fe-16"></i>
-                            <span class="ml-3 item-text">عملیات ها</span>
+                            <span class="ml-3 item-text">گزارش ها</span>
                         </a>
                         <ul class="collapse list-unstyled pl-4 w-100" id="ui-elements">
 
@@ -124,7 +125,7 @@
                         </a>
                     </li>
                     <li class="nav-item w-100">
-                        <a class="nav-link" href="widgets.html">
+                        <a class="nav-link" href="@Url.Action("List","Log")">
                             <i class="fe fe-list fe-16"></i>
                             <span class="ml-3 item-text">تاریخچه</span>
                         </a>
@@ -136,18 +137,25 @@
                 <ul class="navbar-nav flex-fill w-100 mb-2">
 
                     <li class="nav-item dropdown">
+                        
                         <a href="#setting" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle nav-link">
                             <i class="fe fe-settings fe-16"></i>
                             <span class="ml-3 item-text">تنظیمات</span>
                         </a>
                         <ul class="collapse list-unstyled pl-4 w-100" id="setting">
+                            <a class="nav-link pl-3" href="@Url.Action("List", "Role")"><span class="ml-1">نقش ها</span></a>
+                        </ul>
+                        <ul class="collapse list-unstyled pl-4 w-100" id="setting">
                             <a class="nav-link pl-3" href="@Url.Action("List", "Permission")"><span class="ml-1">دسترسی ها</span></a>
                         </ul>
                         <ul class="collapse list-unstyled pl-4 w-100" id="setting">
-                            <a class="nav-link pl-3" href="@Url.Action("List", "Location")"><span class="ml-1">موقعیت ها</span></a>
+                            <a class="nav-link pl-3" href="@Url.Action("List", "Location")"><span class="ml-1">بخش ها</span></a>
                         </ul>
                         <ul class="collapse list-unstyled pl-4 w-100" id="setting">
-                            <a class="nav-link pl-3" href="@Url.Action("List", "Role")"><span class="ml-1">نقش ها</span></a>
+                            <a class="nav-link pl-3" href="@Url.Action("List", "ActionType")"><span class="ml-1">نوع عملیات</span></a>
+                        </ul>
+                        <ul class="collapse list-unstyled pl-4 w-100" id="setting">
+                            <a class="nav-link pl-3" href="@Url.Action("List", "Feature")"><span class="ml-1">ویژگی قطعات</span></a>
                         </ul>
                     </li>
 
@@ -156,11 +164,11 @@
         </aside>
         <main role="main" class="main-content">
             @RenderBody()
-
+            @RenderSection("Scripts", required: false)
         </main> <!-- main -->
     </div> <!-- .wrapper -->
     <script src="~/js/jquery.min.js"></script>
-    <script src="~/js/jquery.validate.js"></script>
+    @* <script src="~/js/jquery.validate.js"></script> *@
     <script src="~/js/jquery.validate.unobtrusive.min.js"></script>
 
     <script src="~/js/popper.min.js"></script>
@@ -399,5 +407,21 @@
         gtag('js', new Date());
         gtag('config', 'UA-56159088-1');
     </script>
+
+    @* custome script *@ 
+   @*  <script>
+        $(document).on('click', 'open-modal', function () {
+            let url = $(this).data("url");
+            let id = $(this).data("id");
+            let title = $(this).data("title");
+
+            $("#mainModalTitle").text(title);
+            $("#mainModalBody").html("looading ...");
+
+            $("#mainModalBody").load(url + '?id=' + id, function(){
+                $("#mainModal").modal('show');
+            })
+        })
+    </script> *@
 </body>
 </html>

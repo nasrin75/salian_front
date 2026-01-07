@@ -61,6 +61,10 @@
       "PackagePath": "staticwebassets\\assets\\products\\p4.jpg"
     },
     {
+      "Id": "F:\\Projects\\salian_front\\wwwroot\\css\\PersianDatePicker.min.css",
+      "PackagePath": "staticwebassets\\css\\PersianDatePicker.min.css"
+    },
+    {
       "Id": "F:\\Projects\\salian_front\\wwwroot\\css\\apexcharts.css",
       "PackagePath": "staticwebassets\\css\\apexcharts.css"
     },
@@ -157,6 +161,10 @@
       "PackagePath": "staticwebassets\\fonts\\BZiba.ttf"
     },
     {
+      "Id": "F:\\Projects\\salian_front\\wwwroot\\fonts\\IRANSansWebFaNum_Light.ttf",
+      "PackagePath": "staticwebassets\\fonts\\IRANSansWebFaNum_Light.ttf"
+    },
+    {
       "Id": "F:\\Projects\\salian_front\\wwwroot\\fonts\\Unique Light_MRT.ttf",
       "PackagePath": "staticwebassets\\fonts\\Unique Light_MRT.ttf"
     },
@@ -183,6 +191,10 @@
     {
       "Id": "F:\\Projects\\salian_front\\wwwroot\\js\\Chart.min.js",
       "PackagePath": "staticwebassets\\js\\Chart.min.js"
+    },
+    {
+      "Id": "F:\\Projects\\salian_front\\wwwroot\\js\\PersianDatePicker.min.js",
+      "PackagePath": "staticwebassets\\js\\PersianDatePicker.min.js"
     },
     {
       "Id": "F:\\Projects\\salian_front\\wwwroot\\js\\apexcharts.custom.js",

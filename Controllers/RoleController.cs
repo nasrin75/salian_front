@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json;
-using salian_api.Entities;
+/*using Newtonsoft.Json;
+using salian_api.Entities;*/
 
 namespace salian_front.Controllers
 {
@@ -8,7 +8,7 @@ namespace salian_front.Controllers
     {
         string baseUrl = "https://localhost:7067/";
 
-        public async Task<List<RoleEntity>> Test()
+       /* public async Task<List<RoleEntity>> Test()
         {
             using (var client = new HttpClient())
             {
@@ -30,13 +30,13 @@ namespace salian_front.Controllers
                     //string jsonstring = JsonConvert.SerializeObject(students);
 
                     Console.WriteLine(readTask);
-                   /* roles = JsonConvert.DeserializeObject<List<RoleEntity>>(jsonstring);
-                    return roles;*/
+                   *//* roles = JsonConvert.DeserializeObject<List<RoleEntity>>(jsonstring);
+                    return roles;*//*
                 }
 
             }
             return null;
-        }
+        }*/
             public ActionResult List()
         {
            /* List<RoleEntity> roles = new List<RoleEntity>();

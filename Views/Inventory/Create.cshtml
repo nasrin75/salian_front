@@ -1,0 +1,191 @@
+﻿<div class="wrapper">
+
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-12 col-xl-10">
+                <div class="row align-items-center my-4">
+                    <div class="col">
+                        <h2 class="h3 mb-0 page-title">افزودن قطعه </h2>
+                        <hr class="my-4">
+
+                    </div>
+
+                </div>
+                <form asp-action="">
+                    <div class="row">
+                        <div class="form-group col-md-4 mb-3">
+                            <label for="example-select">قطعه</label>
+                            <select class="form-control" id="example-select">
+                                <option></option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-4 mb-3">
+                            <label for="example-select">مالک</label>
+                            <select class="form-control" id="example-select">
+                                <option></option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-4 mb-3">
+                            <label for="example-select">موقعیت</label>
+                            <select class="form-control" id="example-select">
+                                <option></option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-4">
+                            <label for="ItNumber">شماره IT </label>
+                            <input type="text" id="Brand" class="form-control">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="ItParentNumber">شماره IT Parent</label>
+                            <input type="text" id="ItParentNumber" class="form-control">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="size">شماره سریال </label>
+                            <input type="text" id="size" class="form-control">
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-4">
+                            <label for="Brand">برند </label>
+                            <input type="text" id="Brand" class="form-control">
+                        </div>
+
+                        <div class="form-group col-md-4">
+                            <label for="Model">مدل </label>
+                            <input type="text" id="Model" class="form-control">
+                        </div>
+
+                        <div class="form-group col-md-4">
+                            <label for="size">سایز </label>
+                            <input type="text" id="size" class="form-control">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="capacity">Capacity </label>
+                            <input type="text" id="capacity" class="form-control">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="propertyNumber">شماره اموال </label>
+                            <input type="text" id="propertyNumber" class="form-control">
+                        </div>
+                        <div class="form-group col-md-4 mb-3">
+                            <label for="date-input1">تاریخ تحویل</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control drgpicker" id="date-input1" aria-describedby="button-addon2">
+                                <div class="input-group-append">
+                                    <div class="input-group-text" id="button-addon-date"><span class="fe fe-calendar fe-16"></span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-4 mb-3">
+                            <label for="date-input1">تاریخ اتمام گارانتی</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control drgpicker" id="date-input1" aria-describedby="button-addon2">
+                                <div class="input-group-append">
+                                    <div class="input-group-text" id="button-addon-date"><span class="fe fe-calendar fe-16"></span></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="card shadow mb-4" style="display:none">
+                        <div class="card-body">
+                            <form action="/file-upload" class="dropzone bg-light rounded-lg" id="tinydash-dropzone">
+                                <div class="dz-message needsclick">
+                                    <div class="circle circle-sm" id="salian-btn">
+                                        <i class="fe fe-upload fe-24 text-white"></i>
+                                    </div>
+                                    <h5 class="text-muted mt-4">بارگذاری تصویر</h5>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-md-4">
+                            <div class="form-group col-md-12 p-0">
+                                <label for="InvoiceNumber">شماره فاکتور </label>
+                                <input type="text" id="InvoiceNumber" class="form-control">
+                            </div>
+                            <label for="InvoiceNumber">تصویر فاکتور </label>
+                            <div class="card shadow mb-4">
+                                <div class="card-body">
+                                    <form action="/file-upload" class="dropzone bg-light rounded-lg" id="tinydash-dropzone">
+                                        <div class="dz-message needsclick">
+                                            <div class="circle circle-lg" id="salian-btn">
+                                                <i class="fe fe-upload fe-24 text-white"></i>
+                                            </div>
+                                            <h5 class="text-muted mt-4">بارگذاری تصویر</h5>
+                                        </div>
+                                    </form>
+                                    <!-- Preview -->
+                                    <!-- file preview template -->
+                                    <div class="d-none" id="uploadPreviewTemplate">
+                                        <div class="card mt-1 mb-0 shadow-none border">
+                                            <div class="p-2">
+                                                <div class="row align-items-center">
+                                                    <div class="col-auto">
+                                                        <img data-dz-thumbnail src="#" class="avatar-sm rounded bg-light" alt="">
+                                                    </div>
+                                                    <div class="col pl-0">
+                                                        <a href="javascript:void(0);" class="text-muted font-weight-bold" data-dz-name></a>
+                                                        <p class="mb-0" data-dz-size></p>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <!-- Button -->
+                                                        <a href="" class="btn btn-link btn-lg text-muted" data-dz-remove>
+                                                            <i class="dripicons-cross"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8 mt-4">
+                            <div class="card shadow">
+                                <div class="card-body">
+                                    <h5 class="card-title">توضیحات</h5>
+                                    <div id="editor" style="min-height:100px;">
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="form-row col-auto mt-4">
+                        <button type="button" class="btn" id="salian-btn">ذخیره</button>
+                    </div>
+                </form>
+            </div>
+        </div> 
+    </div>
+</div> 
+
+@* @section Scripts{
+    <script>
+        $(document).ready(function () {
+            $ajax.done()
+        });
+    </script>
+} *@

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7x8+1lU4ar7WZAGf9ctJg99Kn6qSgsydmsYdcu4pf7w=",
+  "Hash": "E2GicqeppSC3n+ibXAGyAImrzAPEinE4BoiKSAph/eg=",
   "Source": "salian_front",
   "BasePath": "_content/salian_front",
   "Mode": "Default",
@@ -927,6 +927,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\image\\logo.png"
+    },
+    {
+      "Identity": "F:\\Projects\\salian_front\\wwwroot\\image\\salian-v.png",
+      "SourceId": "salian_front",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\Projects\\salian_front\\wwwroot\\",
+      "BasePath": "_content/salian_front",
+      "RelativePath": "image/salian-v.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\salian-v.png"
     },
     {
       "Identity": "F:\\Projects\\salian_front\\wwwroot\\js\\apexcharts.custom.js",

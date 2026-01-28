@@ -1,0 +1,162 @@
+﻿<!-- add and btn section -->
+<div class="row col-md-12">
+    <div class="col ml-auto">
+        <div class="dropdown float-right">
+            <button class="btn btn-secondary float-right ml-3" type="button">Export Excel</button>
+            <button class="btn float-right ml-3" id="salian-btn" type="button">
+                <a class="text-white card-link p-1 btn-toolbar" href="@Url.Action("Create","Inventory")"> افزودن  + </a>
+            </button>
+
+        </div>
+    </div>
+</div>
+<!-- add and btn section -->
+<!-- filter section -->
+<div class="row my-2">
+    <div class="col-md-12">
+        <div class="card shadow mb-4">
+            <div class="card-header">
+                <strong class="card-title">فیلتر</strong>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-2">
+                            <label for="inputTitle"><strong>نام کاربر</strong></label>
+                            <input type="text" class="form-control" id="inputTitle">
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="inputAbbreviation"><strong>مالک</strong></label>
+                            <input type="text" class="form-control" id="inputAbbreviation">
+                        </div>
+                        <div class="form-group col-md-8 my-4 py-1">
+                            <button type="submit" class="btn mb-2 my-auto" id="salian-btn">جستجو</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end  filter section -->
+<!-- List section -->
+<div class="col-md-12 my-4">
+    <div class="card shadow">
+        <div class="card-header my-4">
+            <div class="row">
+                <div class="col-md-6"><h4 class="card-title">انبار</h4></div>
+                <div class="col-md-6" style="text-align:left"><button class="btn btn-warning">نمایش</button></div>
+            </div>
+        </div>
+        <div class="card-body">
+            <table class="table table-hover">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>ID</th>
+                        <th>مالک</th>
+                        <th>موقعیت</th>
+                        <th>شماره اموال</th>
+                        <th>برند</th>
+                        <th>مدل</th>
+                        <th>قطعه</th>
+                        <th>وضعیت</th>
+                        <th>کاربر</th>
+                        <th>تاریخ اتمام گارانتی</th>
+                        <th>تاریخ تحویل</th>
+                        <th>سایز</th>
+                        <th>capacity</th>
+                        <th>شماره IT</th>
+                        <th>شماره IT Parent</th>
+                        <th>شماره فاکتور</th>
+                        <th>تصویر فاکتور</th>
+                        <th>توضیحات</th>
+                        <th>عملیات</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td>ID</td>
+                        <td>مالک</td>
+                        <td>موقعیت</td>
+                        <td>شماره اموال</td>
+                        <td>برند</td>
+                        <td>مدل</td>
+                        <td>قطعه</td>
+                        <td>وضعیت</td>
+                        <td>کاربر</td>
+                        <td>تاریخ اتمام گارانتی</td>
+                        <td>تاریخ تحویل</td>
+                        <td>سایز</td>
+                        <td>گنجایش</td>
+                        <td>شماره IT</td>
+                        <td>شماره IT Parent</td>
+                        <td>شماره فاکتور</td>
+                        <td>تصویر فاکتور</td>
+                        <td>توضیحات</td>
+
+                        <td>
+                            <span class="circle circle-sm bg-danger"><i class="fe fe-trash-2 fe-16 text-white"></i></span>
+                            <span class="circle circle-sm bg-primary-light"><i class="fe fe-edit fe-16 text-white"></i></span>
+                            <span class="circle circle-sm bg-warning"><i class="fe fe-archive fe-16 text-white"></i></span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>ID</td>
+                        <td>مالک</td>
+                        <td>موقعیت</td>
+                        <td>شماره اموال</td>
+                        <td>برند</td>
+                        <td>مدل</td>
+                        <td>قطعه</td>
+                        <td>وضعیت</td>
+                        <td>کاربر</td>
+                        <td>تاریخ اتمام گارانتی</td>
+                        <td>تاریخ تحویل</td>
+                        <td>سایز</td>
+                        <td>گنجایش</td>
+                        <td>شماره IT</td>
+                        <td>شماره IT Parent</td>
+                        <td>شماره فاکتور</td>
+                        <td>تصویر فاکتور</td>
+                        <td>توضیحات</td>
+
+                        <td>
+                            <span class="circle circle-sm bg-danger"><i class="fe fe-trash-2 fe-16 text-white"></i></span>
+                            <span class="circle circle-sm bg-primary-light"><i class="fe fe-edit fe-16 text-white"></i></span>
+                            <span class="circle circle-sm bg-warning"><i class="fe fe-archive fe-16 text-white"></i></span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<!-- end list section -->
+<!-- agination -->
+<nav aria-label="Table Paging" class="mb-0 text-muted">
+    <ul class="pagination justify-content-center mb-0">
+        <li class="page-item"><a class="page-link" href="#">قبلی</a></li>
+        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">بعدی</a></li>
+    </ul>
+</nav>
+<!-- end pagination -->
+
+@section Scripts {
+    <script>
+        $(function () {
+            $("document").ready(function () {
+                $ajax()
+            })
+        })
+       /* $(document).ready(function () {
+            $("button[type = sumbit]").hover(function () {
+                alert("okkk");
+            })
+        })*/
+    </script>
+}

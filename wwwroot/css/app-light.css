@@ -358,10 +358,14 @@ h6, .h6 {
   font-size: 1.09375rem;
   font-weight: 300; }
 
+.salian-thead {
+    background-color: #46645a !important;
+}
 .display-1 {
-  font-size: 6rem;
-  font-weight: 300;
-  line-height: 1.2; }
+    font-size: 6rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
   @media (max-width: 1200px) {
     .display-1 {
       font-size: calc(1.725rem + 5.7vw) ; } }
@@ -1225,8 +1229,9 @@ pre {
   background-color: #ffffff; }
 
 .table-hover tbody tr:hover {
-  color: #6c757d;
-  background-color: #dee2e6; }
+    color: #46645a;
+    background-color: #dee2e6;
+}
 
 .table-primary,
 .table-primary > th,
@@ -1376,9 +1381,10 @@ pre {
     background-color: #cfd5db; }
 
 .table .thead-dark th {
-  color: #ffffff;
-  background-color: #343a40;
-  border-color: #454d55; }
+    color: #ffffff;
+    background-color: #46645a !important;
+    border-color: #46645a !important;
+}
 
 .table .thead-light th {
   color: #495057;
@@ -1791,6 +1797,17 @@ textarea.form-control {
       justify-content: center; }
     .form-inline .custom-control-label {
       margin-bottom: 0; } }
+
+#salian-btn {
+    background: #46645a !important;
+    color: #ffffff;
+    border: #46645a !important;
+}
+#salian-btn:hover {
+    background: #46645a !important;
+    color: #b1b8bf;
+    border: #6c757d !important;
+}
 
 .btn {
   display: inline-block;
@@ -3002,12 +3019,15 @@ input[type="button"].btn-block {
     border-top-right-radius: 0; }
 
 .nav-pills .nav-link {
-  border-radius: 0.25rem; }
+    border-radius: 0.25rem;
+    color: #46645a;
+}
 
-.nav-pills .nav-link.active,
-.nav-pills .show > .nav-link {
-  color: #ffffff;
-  background-color: #1b68ff; }
+    .nav-pills .nav-link.active,
+    .nav-pills .show > .nav-link {
+        color: #ffffff;
+        background-color: #46645a !important;
+    }
 
 .nav-fill .nav-item {
   flex: 1 1 auto;
@@ -3509,10 +3529,11 @@ input[type="button"].btn-block {
   border-bottom-right-radius: 0.25rem; }
 
 .page-item.active .page-link {
-  z-index: 3;
-  color: #f8f9fa;
-  background-color: #1b68ff;
-  border-color: #1b68ff; }
+    z-index: 3;
+    color: #f8f9fa;
+    background-color: #46645a !important;
+    border-color: #6c757d !important;
+}
 
 .page-item.disabled .page-link {
   color: #6c757d;
@@ -9309,9 +9330,10 @@ svg.navbar-brand-img {
 
 .navbar-light .navbar-nav .nav-link {
   color: #001a4e; }
-  .navbar-light .navbar-nav .nav-link:hover {
-    background: #f8f9fa;
-    color: #1b68ff; }
+    .navbar-light .navbar-nav .nav-link:hover {
+        background: #f8f9fa;
+        color: #46645a;
+    }
 
 .navbar-dark .navbar-nav .nav-link {
   color: #f8f9fa; }

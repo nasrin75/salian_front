@@ -358,6 +358,9 @@ h6, .h6 {
   font-size: 1.09375rem;
   font-weight: 300; }
 
+.salian-thead {
+    background-color: #46645a !important;
+}
 .display-1 {
   font-size: 6rem;
   font-weight: 300;
@@ -1376,9 +1379,10 @@ pre {
     background-color: rgba(0, 0, 0, 0.075); }
 
 .table .thead-dark th {
-  color: #ffffff;
-  background-color: #343a40;
-  border-color: #454d55; }
+    color: #ffffff;
+    background-color: #46645a !important;
+    border-color: #46645a !important;
+}
 
 .table .thead-light th {
   color: #495057;
@@ -1792,6 +1796,17 @@ textarea.form-control {
     .form-inline .custom-control-label {
       margin-bottom: 0; } }
 
+
+#salian-btn {
+    background: #46645a !important;
+    color: #ffffff;
+    border: #46645a !important;
+}
+#salian-btn:hover {
+    background: #46645a !important;
+    color: #b1b8bf;
+    border: #6c757d !important;
+}
 .btn {
   display: inline-block;
   font-weight: 400;
@@ -2375,10 +2390,11 @@ input[type="button"].btn-block {
     color: #16181b;
     text-decoration: none;
     background-color: #f8f9fa; }
-  .dropdown-item.active, .dropdown-item:active {
-    color: #ffffff;
-    text-decoration: none;
-    background-color: #1b68ff; }
+    .dropdown-item.active, .dropdown-item:active {
+        color: #ffffff;
+        text-decoration: none;
+        background-color: #46645a !important
+    }
   .dropdown-item.disabled, .dropdown-item:disabled {
     color: #6c757d;
     pointer-events: none;
@@ -3509,10 +3525,11 @@ input[type="button"].btn-block {
   border-bottom-right-radius: 0.25rem; }
 
 .page-item.active .page-link {
-  z-index: 3;
-  color: #f8f9fa;
-  background-color: #1b68ff;
-  border-color: #1b68ff; }
+    z-index: 3;
+    color: #f8f9fa;
+    background-color: #46645a !important;
+    border-color: #6c757d !important;
+}
 
 .page-item.disabled .page-link {
   color: #6c757d;
@@ -9317,10 +9334,11 @@ svg.navbar-brand-img {
 
 .navbar-light .navbar-nav .nav-link {
   color: #dee2e6; }
-  .navbar-light .navbar-nav .nav-link:hover {
-    background: #495057;
-    color: #1b68ff;
-    border-radius: 0.2rem; }
+    .navbar-light .navbar-nav .nav-link:hover {
+        background: #495057;
+        color: #91a1b1;
+        border-radius: 0.2rem;
+    }
 
 .navbar-dark .navbar-nav .nav-link {
   color: #f8f9fa; }
